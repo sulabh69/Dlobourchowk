@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     background-color: white;
     padding-bottom: 1000px;
@@ -5,6 +8,7 @@ body{
 *{
     text-decoration: none;
 }
+
 .navbar{
     background: rgb(75, 67, 69); font-family: calibri; padding-right: 15px;padding-left: 15px;
 }
@@ -27,12 +31,23 @@ button a{
     color: white; font-weight: bold; font-size: 15px;}
 
 /*simply div element for containing search bar */
-.search-div{
+/*.search-div{
     width: 100;
     height: 300px;
     background-color: red;
     text-align: center;
     padding-top: 200px
+}*/
+.search-div {
+    width: 100%; /* Fixing the width to be a percentage value */
+    height: 420px;
+    background-image: url('cppe.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-color:white; /* This will be visible if the image is not loaded */
+    text-align: center;
+    padding-top: 200px; /* You may need to adjust this if it affects your layout */
+    margin-bottom: 100px;
 }
 /*inputelement inside the search-div*/
 .input-element{
@@ -79,5 +94,92 @@ button a{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 10px;
+    
 
+}
+.job_apply_div{
+    display: inline-block;
+    background-color: whites;
+    width: 100%;
+    height: 250px;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+.apply_for_job_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.name_of_host{
+    display: inline-block;
+    width: 70%;
+}
+.apply_btn{
+    background-color: white;
+
+}
+.more_jobs_btn{
+    background-color: white;
+    width: 20%;
+    
+}
+.getmorejobs {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.categories{
+   border: 2px solid black;
+   margin-bottom: 60px;
+   align-items: top;
+}
+
+
+
+    
+
+
+.yapperimage{
+    display: inline-block;
+    width:300px;
+    height: 300px;
+    background-image: url('plumber/bruh.JPEG'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+   
+    
+    
+}
+.yapping-grid{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+.yapperimagae1{
+    width: 200px;
+    height: 300px;
+}
+.yapper_information{
+    width:100%;
+}
+.yapping_heading,.yapping_story{
+    display: inline-block;
+}
+.right_side_div{
+    width: 500px;
+    height: 500px;
+   
+}
+.Contact_us{
+    background-color: rgb(0, 255, 76);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact_us_input_elements{
+    display: block;
+    width: 500px;
 }
